@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+	<head>
+		<meta charset = "UTF-8">
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<title>Restaurant Pick a Bowl</title>
+	</head>
+	
+	<body>
+	
+		<header>
+			<h1>Pick a bowl</h1>
+			
+			<h2>Vegan poke bowls made with love and consciousness</h2>
+			
+			<p>Enjoy a delicious healthy meal from the very first vegan poke bowl restaurant in Brussels!</p>
+			<p>All our ingredients are organic and local (when possible).</p>
+			<p>By ordering at Pick a Bowl, you'll contribute to a better world!</p>
+			<p>♥</p>
+		</header>
+	
+		<nav id="menu">
+			<p class="title">Our location</p>
+			<p> <img src="location.png" alt="location" class="map"></p>
+			<p style="font-style:italic">Our restaurant is located in Brussels' city center.</p>
+			<p>We'll be happy to deliver you during our opening hours:</p>
+			<table class="hours">
+				<tr><td>Monday: </td><td>11.00am - 18.00pm</td></tr>
+				<tr><td>Tuesday: </td><td>11.00am - 18.00pm</td></tr>
+				<tr><td>Wednesday: </td><td>11.00am - 15.00pm</td></tr>
+				<tr><td>Thurday: </td><td>11.00am - 18.00pm</td></tr>
+				<tr><td>Friday: </td><td>11.00am - 18.00pm</td></tr>
+				<tr><td>Saturday: </td><td>10.00am - 20.00pm</td></tr>
+				<tr><td>Sunday: </td><td>Sorry, it's nap time!</td></tr>
+			</table>
+			
+			<p class="title">Our concept</p>
+		
+			<h3>You pick the ingredients to make your own delicious poke bowl and we deliver it to your home sweet home!</h3>
+			
+			<p style="text-decoration:underline">Build your meal:</p>
+			<ul>
+				<li><a href=#1>Base</a></li>
+				<li><a href=#2>Protein</a></li>
+				<li><a href=#3>Veggies</a></li>
+				<li><a href=#4>Toppings</a></li>
+				<li><a href=#5>Sauce</a></li>
+			</ul>
+		</nav>
+	
+		<main>
+			<form action="action.html" method="post">
+				<h3 id="1">Step 1: Pick your BASE</h3>
+				<table>
+					<caption style="caption-side:bottom">*Pick 1 max.</caption>
+					<tr><th>Base</th><th>Size</th></tr>
+					<tr><td><input type="radio" name="base" value="white" required>White rice</td><td><select name="priceW">
+						<option disabled selected value>Select</option>
+						<option value="3">Small 3,00€</option>
+						<option value="4">Medium 4,00€</option>
+						<option value="5">Large 5,00€</option></select></td></tr>
+					<tr><td><input type="radio" name="base" value="brown">Brown rice</td><td><select name="priceB">
+						<option disabled selected value>Select</option>
+						<option value="3,5">Small 3,50€</option>
+						<option value="4,5">Medium 4,50€</option>
+						<option value="5,5">Large 5,50€</option></select></td></tr>
+					<tr><td><input type="radio" name="base" value="quinoa">Quinoa</td><td><select name="priceQ">
+						<option disabled selected value>Select</option>
+						<option value="4">Small 4,00€</option>
+						<option value="5">Medium 5,00€</option>
+						<option value="6">Large 6,00€</option></select></td></tr>
+				</table>
+				
+				<hr>
+				
+				<h3 id="2">Step 2: Get some PROTEIN</h3>
+				<table>
+					<caption style="caption-side:bottom">*Pick 1 max.</caption>
+					<tr><th>Protein</th><th>Portion</th></tr>
+					<tr><td><input type="radio" name="protein" value="tofu" required>Tofu</td><td><select name="priceT">
+						<option disabled selected value>Select</option>
+						<option value="1,5">Single +1,50€</option>
+						<option value="2,5">Double +2,50€</option></select></td></tr>
+					<tr><td><input type="radio" name="protein" value="seitan">Seitan</td><td><select name="priceS">
+						<option disabled selected value>Select</option>
+						<option value="2,5">Single +2,50€</option>
+						<option value="3,5">Double +3,50€</option></select></td></tr>
+					<tr><td><input type="radio" name="protein" value="tempeh">Tempeh</td><td><select name="priceT">
+						<option disabled selected value>Select</option>
+						<option value="2,5">Single +2,50€</option>
+						<option value="3,5">Double +3,50€</option></select></td></tr>
+				</table>
+				
+				<hr>
+				
+				<h3 id="3">Step 3: Eat your VEGGIES</h3>
+				<p><input type="radio" value="a">Carrots <input type="radio" value="b">Tomatoes<input type="radio" value="c">Lettuce</p>
+				<p><input type="radio" value="d">Soybean sprouts<input type="radio" value="e">Baby corn<input type="radio" value="f">Cucumber</p>
+				<p><input type="radio" value="g">Avocado<input type="radio" value="h">Mango<input type="radio" value="i">Pineapple</p>
+				<p><input type="radio" value="j">Seaweed<input type="radio" value="k">Edamame<input type="radio" value="l">Mushrooms</p>
+				<p class="legende">*+0,80€ per veggie selected</p>
+				
+				
+				<h3 id="4">Step 4: You might want a TOPPING</h3>
+				<p><input type="radio" value="m">Ginger<input type="radio" value="n">Crispy onions<input type="radio" value="o">Spring onions</p>
+				<p><input type="radio" value="p">Sesame seeds<input type="radio" value="q">Seaweed crisps<input type="radio" value="r">Chili flakes</p>
+				<p><input type="radio" value="s">Nachos<input type="radio" value="t">Pumpkin seeds<input type="radio" value="u">Bread croutons</p>
+				<p class="legende">*+1,00€ per topping</p>
+				
+				<hr>
+				
+				<h3 id="5">Step 5: Make it SAUCY</h3>
+				<p> MILD: <input type="radio" name="sauce" value="1" required>Guacamole<input type="radio" name="sauce" value="2">Sesame dressing<input type="radio" name="sauce" value="3">Soy sauce</p>
+				<p> SPICY: <input type="radio" name="sauce" value="4">Wasabi mayo<input type="radio" name="sauce" value="5">Sweet chili<input type="radio" name="sauce" value="6">Sriracha hot</p>
+				<p class="legende">*Your sauce is included in the price</p>
+				
+				<hr>
+				
+				<p style="font-weight:bold;font-size:1.2em;">Where should we deliver it?</p>
+				<fieldset>
+					<p><label for="name">First name: <input type="text" name="name" id="name"></label></p>
+					<p><label for="surname">Last name: <input type="text" name="surname" id="surname" required></label></p>
+					<p><label for="address">Address: <input type="text" name="address" id="address" required></label></p>
+					<p>Commune:
+						<select name="commune">
+							<option value="0">Select</option>
+							<option value="1000">1000 Brussels</option>
+							<option value="1030">1030 Schaerbeek</option>
+							<option value="1040">1040 Etterbeek</option>
+							<option value="1050">1050 Ixelles</option>
+							<option value="1060">1060 Saint-Gilles</option>
+							<option value="1070">1070 Anderlecht</option>
+							<option value="1080">1080 Molenbeek-St-Jean</option>
+							<option value="1081">1081 Koekelberg</option>
+							<option value="1082">1082 Berchem-Ste-Agathe</option>
+							<option value="1083">1083 Ganshoren</option>
+							<option value="1090">1090 Jette</option>
+							<option value="1140">1140 Evere</option>
+							<option value="1150">1150 Woluwé-St-Pierre</option>
+							<option value="1160">1160 Auderghem</option>
+							<option value="1170">1170 Watermael-Boitsfort</option>
+							<option value="1180">1180 Uccle</option>
+							<option value="1190">1190 Forest</option>
+							<option value="1200">1200 Woluwé-St-Lambert</option>
+							<option value="1210">1210 St-Josse-ten-Noode</option>
+						</select>
+					</p>
+					<p style="font-size:0.8em">*We deliver to any commune of Brussels</p>
+					<p><label for="number">Phone number: <input type="tel" name="tel" id="number" placeholder="04xx xx xx xx" maxlength="10" required></label></p>
+					<p><label for="email">Email address: <input type="email" name="email" id="email"></label></p>
+					<p><input type="submit" value="Submit"></p>
+					<p style="font-style:italic">Warning: our deliveries contain a high dose of happiness!</p>
+				</fieldset>
+			</form>
+		</main>
+	
+		<footer>
+			<p>Because we love our clients, we want what's best for them ♥</p>
+		</footer>
+	
+	</body>
+	
+</html>

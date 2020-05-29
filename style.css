@@ -1,0 +1,103 @@
+html {
+	font-family: comic sans ms;
+	background-image: url('poke.jpg');
+	background-size: 15%;
+	background-repeat: repeat;
+}
+
+body {
+	width: 75%;
+	background-color : antiquewhite;
+	border-color: mediumpurple;
+	border-style: groove;
+	border-radius: 75px;
+	margin: 35px auto 35px auto;
+}
+
+header{
+	margin-bottom: 40px;
+	text-align: center;
+}
+
+h1 {
+	font-family: harlow solid italic;
+	font-size: 8em;
+	color: indianred;
+	text-transform: capitalize;
+	letter-spacing: -10px;
+	border-style: outset;
+	border-color: mediumpurple;
+	border-radius: 20px;
+	border-width: 5px;
+	margin: 50px 50px 50px 50px;
+}
+
+h2 {
+	font-size: 2em;
+	font-style: italic;
+}
+
+h3 {
+	color: brown;
+}
+
+#menu {
+	float: right;
+	width: 40%;
+	margin: 10px 10px 10px 10px;
+	border: solid;
+	border-radius: 20px;
+	line-height: 1.2;
+	padding: 10px 10px 10px 10px;
+	border-color: mediumpurple;
+}
+
+.title {
+	text-align:left;
+	font-size:2em;
+	font-weight:bold
+}
+
+.map{
+	margin-right:auto;
+	margin-left:auto;
+	width: 400px;
+}
+
+.hours {
+	border:none;
+	color: mediumpurple;
+}
+
+main {
+	margin: 20px 20px 20px 20px;	
+}
+
+table {
+	border-style: solid;
+	border-color: mediumpurple;
+	border-radius: 20px;
+	padding: 20px;
+}
+
+td {
+	text-align: left;
+	width: 150px;
+}
+
+th {
+	text-align: center;
+	font-size: 1.5em;
+	color: black;
+}
+
+caption, .legende {
+	text-align: left;
+	font-size: 0.9em;
+	color: crimson;
+}
+	
+footer {
+	font-size: 0.8em;
+	text-align:center;
+}
